@@ -1,0 +1,17 @@
+{
+    "name": "OpenMageModuleFostering/magento_safepay",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Protect your business against online fraud attacks and all subsequent fraud-chargebacks and financial losses.
+",
+    "authors": [
+    {
+        "name": "SafePay Network",
+        "email": "m.bhinder@safepay-inc.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

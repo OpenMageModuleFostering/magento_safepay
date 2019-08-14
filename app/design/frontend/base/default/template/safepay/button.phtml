@@ -1,0 +1,20 @@
+<?php if($this->safePayStatus=='PROCEED'): ?>  
+    <img class="sp_icon" alt="safepay" src="<?php echo $this->getSkinUrl('images/safepay/'); ?>confirm.jpg"/>  
+    <button type="submit" title="<?php echo $this->__('Place Order') ?>" class="sp_checkout_btn button btn-checkout" onclick="review.save();"><span><span><?php echo $this->__('Place Order') ?></span></span></button>
+<?php elseif($this->safePayStatus=='TIMEDOUT'): ?>
+    <img style="width: 300px;" class="sp_icon" alt="safepay" src="<?php echo $this->getSkinUrl('images/safepay/'); ?>timeout.jpg"/>
+    <button type="submit" title="<?php echo $this->__('Restart') ?>" class="restart_btn sp_checkout_btn" onclick="$$('#opc-payment .step-title')[0].click(); submitPaymentSP();"><span><span><?php echo $this->__('Place Order') ?></span></span></button>
+<?php elseif($this->safePayStatus=='CEASE'): ?>
+    <img class="sp_icon" alt="safepay" src="<?php echo $this->getSkinUrl('images/safepay/'); ?>denied.jpg"/>
+    <button type="submit" title="<?php echo $this->__('Terminate') ?>" class="terminate_btn sp_checkout_btn" onclick="window.location.href = '<?php echo Mage::getBaseUrl() ?>';"><span><span><?php echo $this->__('Place Order') ?></span></span></button>
+<?php else: ?>
+    <button type="submit" title="<?php echo $this->__('Place Order') ?>" class="button btn-checkout" onclick="review.save();"><span><span><?php echo $this->__('Place Order') ?></span></span></button>
+<?php endif; ?>
+
+<script type="text/javascript">
+//<![CDATA[
+    if(payment.currentMethod === 'safepaynetwork_creditcard') {
+            document.getElementById('sp-temp-load').style.display = "none";
+    }
+//]]>
+</script>

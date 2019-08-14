@@ -1,0 +1,50 @@
+ <config>    
+    <modules>
+        <Safepaynetwork_Safepay>
+            <version>0.1.0</version>
+        </Safepaynetwork_Safepay>
+    </modules>
+    <global>
+        <models>       
+            <safepay>
+                <class>Safepaynetwork_Safepay_Model</class>
+            </safepay>
+            <safepay_adminhtml>
+                <class>Safepaynetwork_Safepay_Adminhtml_Model</class>
+            </safepay_adminhtml>
+        </models>
+        <blocks>
+            <safepay>
+                <class>Safepaynetwork_Safepay_Block</class>
+            </safepay>          
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <safepay>
+                    <file>safepay.xml</file>
+                </safepay>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <payment>
+            <safepaynetwork_creditcard>
+                <active>1</active>
+
+                <order_status>pending</order_status>
+
+                <model>safepay/method_creditcard</model>
+
+                <title>Credit card</title>
+
+                <payment_action>sale</payment_action>
+
+                <allowspecific>0</allowspecific>
+
+                <sort_order>1</sort_order>
+            </safepaynetwork_creditcard>
+        </payment>
+    </default>
+</config> 

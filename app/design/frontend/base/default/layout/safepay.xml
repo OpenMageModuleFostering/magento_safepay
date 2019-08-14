@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <checkout_onepage_index translate="label">        
+        <reference name="head">
+            <action method="addJs"><script>safepay/js/safepay.js</script></action>           
+            <action method="addCss">
+                <name>css/safepay.css</name>
+                <params>media="all"</params>
+            </action>   
+        </reference>
+        
+        <label>One Page Checkout</label>
+
+        <reference name="checkout.onepage">
+            <action method="setTemplate"><template>safepay/onepage.phtml</template></action>
+        </reference>
+        
+        <reference name="checkout.onepage.payment">
+            <action method="setTemplate"><template>safepay/payment.phtml</template></action>
+        </reference>
+    </checkout_onepage_index>
+    
+    <checkout_onepage_success translate="label">
+        <reference name="head">           
+            <action method="addCss">
+                <name>css/safepay.css</name>
+                <params>media="all"</params>
+            </action>   
+        </reference>
+        <reference name="content">
+            <action method="unsetChildren"></action>
+            <block type="checkout/onepage_success" name="checkout.success" template="safepay/success.phtml"/>
+        </reference>
+    </checkout_onepage_success>
+            
+    <checkout_onepage_review translate="label">
+        <reference name="root">
+            <block type="safepay/onepage_button" name="onepage.button" as="button" template="safepay/button.phtml"/>
+        </reference>
+    </checkout_onepage_review>
+</layout>

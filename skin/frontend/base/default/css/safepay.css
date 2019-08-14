@@ -1,0 +1,346 @@
+#center_column{
+    width: 757px!important;
+}
+.left-safepay a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.left-safepay a img{
+    margin: 0!important;
+}
+
+.left-safepay {
+    float: left;
+    padding-top: 50px;
+    text-align: center;
+    width: 35%;
+}
+.right-safepay {
+    border-left: 1px solid #EFEFEF;
+    float: left;
+    margin-left: 3%;
+    padding-left: 6%;
+    width: 55%;
+}
+#sp-confirm{
+    width: 100%;
+    margin: 10px 0;
+    float: left;
+}
+#safepay-wrapper #cart_navigation{
+    width: 100%;
+    float: left;
+    margin-top: 25px;
+}
+
+#safepay-wrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #EEEEEE;
+    float: left;
+    padding: 2%;
+    width: 96%;
+}
+.right-safepay p{
+    padding-bottom: 10px;
+}
+.right-safepay table tr td{
+    padding: 5px 0;
+}
+
+.right-safepay table tr td .text {
+    border: 1px solid #CCCCCC;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 0;
+    margin-top: 2px;
+    padding: 0 3px !important;
+    width: 256px;
+}
+.right-safepay table tr td .select {
+    border: 1px solid #CCCCCC;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 3px;
+    padding: 3px;
+    width: 264px;
+}
+.right-safepay table tr td .select50 {
+    border: 1px solid #CCCCCC;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 3px;
+    padding: 3px;
+}
+.right-safepay table tr td .select50:last-child {
+    margin-left: 3px;
+    width: 80px;
+}
+.right-safepay table tr td label{
+    font-weight: bold;
+    text-align: right;
+}
+.right-safepay table tr td:first-child{
+    text-align: left;
+}
+.right-safepay table{
+    width: 100%;
+}
+#safepay-wrapper h3{
+    background: none repeat scroll 0 0 #EEEEEE;
+    color: #333333;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px 5px;
+}
+.right-safepay label em{
+    color: #EB340A;
+    font-style: normal;
+}
+#sp-guide{
+    display: none;
+}
+#wit{
+    cursor: help;
+}
+#wit:hover{
+    text-decoration: none;
+}
+body > .sp-guide-inner {
+    display: block;
+    height: 226px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    vertical-align: middle;
+    width: 474px;
+    z-index: 99999999;
+    position: fixed;
+    top: 150px;
+    left: 400px;
+}
+body > .sp-guide-inner img{
+    vertical-align: middle;
+}
+body > .sp-guide-inner table{
+    width: 100%;
+    height: 100%;
+}
+body > .sp-guide-inner table tr{
+    width: 100%;
+    height: 100%;
+}
+body > .sp-guide-inner table tr td{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+body > .sp-guide-inner table tr td .sp-container{
+    margin: 0 auto;
+    padding: 20px;
+    display: inline-block;
+    background: none repeat scroll 0 0 #EAF6FF;
+    position: relative;
+    border: 1px solid #0173CA;
+}
+body > .sp-guide-inner table tr td .sp-container img{
+    width: 100%;
+    height: 100%;
+}
+body > .sp-guide-inner table tr td .sp-close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#sp-loading {
+    height: 325px;
+    left: 400px;
+    margin: 150px auto 0;
+    top: 150px;
+    width: 600px;
+    z-index: 8888;
+}
+#sp-temp-load{
+    background: url('../images/safepay/overlay.png');
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+    display:none;
+}
+#sp-loading #sp-loading-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#sp-loading #sp-loading-inner .loading-message{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#sp-loading #sp-loading-inner .reloader{
+    position: absolute;
+    bottom: 20px;
+    left: 220px;
+    z-index: 10;
+}
+#sp-loading-wrapper{
+    width: 100%;
+    height: 100%;
+    background: none repeat scroll 0 0 rgba(113, 113, 113, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+#sp-loading-wrapper.active, #sp-loading.active{
+    display: block!important;
+}
+.sp-cancel-action{
+    position:  absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 9999999;
+}
+#sp-form {
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+}
+#cart_navigation .timeout {
+    background: url("../img/safepay/restart.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    border: medium none;
+    display: inline-block;
+    height: 45px;
+    margin-right: 10px;
+    padding: 0;
+    text-indent: -99999px;
+    width: 140px;
+}
+#cart_navigation .cease {
+    background: url("../img/safepay/terminate.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    border: medium none;
+    display: inline-block;
+    height: 45px;
+    margin: 0 10px 0 0;
+    padding: 0;
+    text-indent: -99999px;
+    width: 140px;
+}
+#cart_navigation.timeout {
+    background: url("../img/safepay/timeout.jpg") no-repeat scroll 15px 21px rgba(0, 0, 0, 0);
+    padding: 50px 2%;
+}
+#cart_navigation.proceed {
+    background: url("../img/safepay/confirm.jpg") no-repeat scroll 15px 12px rgba(0, 0, 0, 0);
+    padding: 50px 2%;
+}
+#cart_navigation.cease {
+    background: url("../img/safepay/denied.jpg") no-repeat scroll 15px 21px rgba(0, 0, 0, 0);
+    padding: 50px 2%;
+}
+span.button {
+    background: url("../img/button.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 7px;
+    box-shadow: 0 2px 2px #DDDDDD;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 24px;
+    border: 0 none;
+    height: 24px;
+    margin: 0;
+    padding: 0 12px;
+}
+span.button:hover {
+    background-position: 0 -24px;
+}
+.content .error {
+    background: none repeat scroll 0 0 #FFBBBB;
+    border: 1px solid #FF0000;
+    margin-bottom: 15px;
+}
+#safepay-wrapper img, .sp-banner img{
+    padding: 0!important;
+    border: none!important;
+}
+.sp-banner img{
+    width: 100%!important;
+    max-width: none!important;
+}
+.right-safepay table tr td{
+    border: none!important;
+}
+.ajax-field{
+    border-radius: 0!important;
+    box-shadow: none!important;
+}
+
+.checkout-content .buttons {
+    clear: both;
+}
+
+.buttons {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #EEEEEE;
+    float: left;
+    margin: 20px 0 !important;
+    overflow: auto;
+    padding: 2%;
+    width: 96%;
+}
+#safepay-wrapper .error ol{
+    margin: 0;
+}
+#safepay-wrapper .error ol li{
+    color: #FF0101;
+}
+#safepay-wrapper .error{
+    padding: 15px 15px 15px 30px;
+}
+#payment_form_safepaynetwork_creditcard{
+    width: 620px;
+}
+.safepay_select_wrapper{
+    float: left;
+    text-align: left;
+}
+.sp_icon{
+    float: right;
+}
+.terminate_btn{
+    width: 140px;
+    height: 45px;
+    text-indent: -999999px;
+    background: url('../images/safepay/terminate.png') top left no-repeat;
+    float: right;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.restart_btn{
+    width: 140px;
+    height: 45px;
+    text-indent: -999999px;
+    background: url('../images/safepay/restart.png') top left no-repeat;
+    float: right;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.sp_checkout_btn{
+    float: right!important;
+    margin-left: 500px!important;
+    margin-top: 20px!important;
+}
