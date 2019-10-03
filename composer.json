@@ -1,5 +1,7 @@
 {
     "keywords": [
         "openmage-module"
-    ]
+    ],
+    "name": "openmage-module-fostering\/magento_safepay",
+    "license": "OSL-3.0"
 }
